@@ -70,14 +70,6 @@ def install_skin(skins, index, remove_old_backup=False, backup=True):
 
 def main():
     
-    # printing intro
-    deco(r''' _   ___  __
-| | | \ \/ /      Prayag Jain | Hax Guru
-| |_| |\  /       YouTube: https://youtube.com/c/haxguru
-|  _  |/  \       GitHub: https://github.com/Prayag2
-|_| |_/_/\_\      Email: haxguru2@gmail.com
-''')
-    
     # Checking if WPS Office (flatpak version) exists
     if not os.path.exists(wps_path):
         deco("WPS Office is either not installed or you have a different version.\nPlease note that this script will only work with the FLATPAK version of WPS-Office.\nRun: flatpak install com.wps.Office", top=False)

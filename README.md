@@ -1,16 +1,16 @@
 # WPS Skin Installer
-This script will let you install your favourite WPS Office skin in Linux! I do NOT own any skin. All the skins were made by Kingsoft and belong to Kingsoft. This script will only let you INSTALL those skins because you can't do that on Linux by default.  
-Note: This will only work with the Flatpak version of WPS Office.
+Script untuk install wps skin. Hal ini tidak bisa kalian lakukan di Linux tapi bisa kalian lakukan di Mac dan Windows.
+
+Installer ini untuk kalian yang tidak pakai flatpak. (Tested on Arch)
+
   
 # Steps
-- Clone the GitHub repository  
+- Clone repository ini
   `git clone https://github.com/Prayag2/wps-skin-installer ~/Downloads/wps-skin-installer`
-- Run The Script  
+- Jalankan script-nya
   `cd ~/Downloads/wps-skin-installer`  
   `sudo chmod +x ./script.sh`  
-  `./script.sh`
+  `sudo ./script.sh`
   
-- Choose your desired skin and install! 
+- Pilih sesukan hati kalian
   
-# Contribution
-You can contribute by creating a new issue if you face any problems or bugs.
