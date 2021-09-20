@@ -12,6 +12,3 @@ Installer ini untuk kalian yang tidak pakai flatpak. (Tested on Arch)
   cd ~/Downloads/wps-skin-installer  
   sudo chmod +x ./script.sh  
   sudo ./script.sh```
-  
-- Pilih sesukan hati kalian
-  
