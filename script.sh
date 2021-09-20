@@ -15,7 +15,7 @@ import os, urllib.request, shutil
 
 
 # Variables #
-wps_path = "/var/lib/flatpak/app/com.wps.Office/x86_64/stable/active/files/extra/wps-office/office6/skins"
+wps_path = "/usr/lib/office6/skins"
 skins=['All Green', 'Dark (Buggy)', 'Green Cat', 'Green Soldiers', 'Midnight Gray', 'Office-like', 'Pink', 'Pink 2', 'Blocky', 'Modern', 'Teacher', 'Yellow Autumn', 'Yellow Cat']
 
 
@@ -38,6 +38,16 @@ def deco(text, top=True, bottom=True):
 def deco_input(text, top=True, bottom=True):
     deco(text, top, bottom)
     return input(": ")
+
+def link_folder():
+    # Remove all folder
+    os.system(f"rm -rf {wps_path}/*")
+
+    # Make folder
+    os.system(f"mkdir -p {wps_path}/2019white")
+
+    # Make link
+    os.system(f"ln -s {wps_path}/2019white {wps_path}/2019dark")
 
 
 def install_skin(skins, index, remove_old_backup=False, backup=True):
